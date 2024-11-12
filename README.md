@@ -1,6 +1,6 @@
 # KG-CTF
 
-This is the official implementation of [Accurate Coupled Tensor Factorization with Knowledge Graph] (BigData 2024). 
+This is the official implementation of "Accurate Coupled Tensor Factorization with Knowledge Graph" (BigData 2024). 
 The codes for the implementation of KG-CTF (Knowledge Graph based Coupled Tensor Factorization) are included in `src/`.
 
 ![Overview](KG-CTF.png)
@@ -19,8 +19,7 @@ We recommend using the following versions of packages:
 - scipy==1.10.1
 
 ## Data Overview
-We use six datasets.
-Download the datasets from the official links.
+We utilize six financial datasets covering different stock markets. To get started, download each dataset from the provided official links.
 |        **Dataset**        |                  **Link**                   |
 |:-------------------------:|:-------------------------------------------:|
 |       **SP500**        |           `https://www.kaggle.com/datasets/camnugent/sandp500`           |
@@ -39,7 +38,6 @@ python main.py
 ```
 
 ## References
-
 If you use this code, please cite the following paper.
 ~~~
 @inproceedings{lee2024accurate,
