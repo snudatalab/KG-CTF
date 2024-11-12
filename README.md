@@ -3,7 +3,7 @@
 This is the official implementation of [Accurate Coupled Tensor Factorization with Knowledge Graph] (BigData 2024). 
 The codes for the implementation of KG-CTF (Knowledge Graph based Coupled Tensor Factorization) are included in `src/`.
 
-![Overview]([KG-CTF.pdf](https://github.com/snudatalab/KG-CTF/blob/main/KG-CTF.pdf))
+![Overview](KG-CTF.png)
 
 ## Abstract
 
