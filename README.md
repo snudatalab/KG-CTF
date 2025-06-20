@@ -40,16 +40,4 @@ You can run the demo script in the directory by the following code. The datasets
 python main.py
 ```
 
-## References
-If you use this code, please cite the following paper.
-~~~
-@inproceedings{lee2024accurate,
-  author    = {SeungJoo Lee and
-               Yong-chan Park and
-               U Kang},
-  title     = {Accurate Coupled Tensor Factorization with Knowledge Graph},
-  booktitle = {Big Data},
-  year      = {2024}
-}
-~~~
 
