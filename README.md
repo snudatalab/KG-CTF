@@ -1,14 +1,13 @@
-# KG-CTF
+# KG-CTF and OKG-CTF
 
-This is the official implementation of "Accurate Coupled Tensor Factorization with Knowledge Graph" (BigData 2024). 
-The codes for the implementation of KG-CTF (Knowledge Graph based Coupled Tensor Factorization) are included in `src/`.
+This is the official implementation of "Offline and Online Accurate Coupled Tensor Factorization with Knowledge Graph". 
+The codes for the implementation of KG-CTF and OKG-CTF (Offline and Online Knowledge Graph based Coupled Tensor Factorization) are included in `src/`.
 
 ![Overview](KG-CTF.png)
 
 ## Abstract
 
-How can we accurately decompose a temporal irregular tensor along with a related knowledge graph tensor? The PARAFAC2 decomposition is widely used for analyzing irregular tensors composed of matrices with varying row sizes. Recent advancements in PARAFAC2 methods primarily focus on capturing dynamic features that change over time, since data irregularities often arise from temporal fluctuations. However, these methods often neglect static features, such as knowledge information, which remain constant over time. 
-In this paper, we propose KG-CTF (Knowledge Graph-based Coupled Tensor Factorization), a coupled tensor factorization method designed to capture both dynamic and static features within an irregular tensor. To incorporate knowledge graph tensors as static features, KG-CTF couples an irregular temporal tensor with a knowledge graph tensor that share a common axis. Additionally, KG-CTF employs a relational regularization to capture relationships among the factor matrices of the knowledge graph tensor. For accelerated convergence of the factor matrices, KG-CTF utilizes momentum update techniques. Extensive experiments show that KG-CTF reduces error rates by up to 1.64× compared to existing PARAFAC2 methods.
+How can we accurately decompose a temporal irregular tensor along while incorporating a related knowledge graph tensor in both offline and online streaming settings? PARAFAC2 decomposition is widely applied to the analysis of irregular tensors consisting of matrices with varying row sizes. In both offline and online streaming scenarios, existing PARAFAC2 methods primarily focus on capturing dynamic features that evolve over time, since data irregularities often arise from temporal variations. However, these methods tend to overlook static features, such as knowledge-based information, which remain unchanged over time. In this paper, we propose KG-CTF (Knowledge Graph-based Coupled Tensor Factorization) and OKG-CTF (Online Knowledge Graph-based Coupled Tensor Factorization), two coupled tensor factorization methods designed to effectively capture both dynamic and static features within an irregular tensor in offline and online streaming settings, respectively. To integrate knowledge graph tensors as static features, KG-CTF and OKG-CTF couple an irregular temporal tensor with a knowledge graph tensor by sharing a common axis. Additionally, both methods employ relational regularization to preserve the structural dependencies among the factor matrices of the knowledge graph tensor. To further enhance convergence speed, we utilize momentum-based update strategies for factor matrices. Through extensive experiments, we demonstrate that KG-CTF reduces error rates by up to 1.64× compared to existing PARAFAC2 methods. Furthermore, OKG-CTF achieves up to 5.7× faster running times compared to existing streaming approaches for each newly arriving tensor.
 
 ## Requirements
 We recommend using the following versions of packages:
