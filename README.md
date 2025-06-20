@@ -4,6 +4,7 @@ This is the official implementation of "Offline and Online Accurate Coupled Tens
 The codes for the implementation of KG-CTF and OKG-CTF (Offline and Online Knowledge Graph based Coupled Tensor Factorization) are included in `src/`.
 
 ![Overview](KG-CTF.png)
+![Overview](OKG-CTF.png)
 
 ## Abstract
 
